@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FAQ_files/homepage.css">
+    <link rel="stylesheet" href="FAQ_files/FAQ.css">
+    <title>Registered User FAQ</title>
+</head>
+<body>
+    <div class="header">  <!--navigationbar -->
+        <div class="logo-container">
+            <img src="img/logo.jpg" alt="Website Logo" height="50px" width="50px">
+            <h1>LicenseXpress</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="registereduser.html">Home</a></li>
+                <li><a href="profile.php">Dasboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Driving License</a>
+                    <div class="dropdown-content">
+                        <a href="newDrivingLicesne.html">New Driving License</a>
+                        <a href="renewDrivingLicesne.html">Rnew Driving License</a>
+                        <a href="updateDrivingLicense.html">Update Driving License</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Shedule</a>
+                    <div class="dropdown-content">
+                        <a href="medical.html">Medical Appointment</a>
+                        <a href="WExam.html">written Exam</a>
+                        <a href="PExam.html">Practical Exam</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Eservices</a>
+                    <div class="dropdown-content">
+                        <a href="payments.php">Payment</a>
+                        <a href="practiceexamforregsitereduser.php">Practice Exam</a>
+                    </div>
+                </li>          
+                <li><a href="#">Reports</a></li>
+                <li class="dropdown" id = "left">
+                    <a href="#"><img src="img/user.png" alt="user" id="userimg" height="25px" width="25px"></a>
+                    <div class="dropdown-content">
+                        <a href="logout.php">Logout</a>
+                    </div>
+                </li> 
+                <li id = "left">
+                    <input type="text" name="Search" id="Search" placeholder="Search" class="image-placeholder">
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+
+
+    <div class="container01">
+        <img class="img_FAQ" src="./FAQ_files/FAQ.jpeg" alt="image_FAQ">
+  
+      </div>
+  
+    <div class="p01">
+      <p>Find answers to your frequently asked questions about the LicenseXPress system here.......</p>
+    </div>
+  
+  
+    <div class="container">
+  
+        <div class="Box">
+  
+          <h4>Which license categories are available through the  LicenseXPress system?</h4><hr>
+          <p>We offer normal Driver's licenses & renewals.</p>
+  
+        </div>
+  
+        <div class="Box">
+  
+          <h4>How does the online license application process work?</h4><hr>
+          <p>The exact process may vary depending on the specific system, but typically, users would create an account, provide necessary personal information, upload any required documents, and make online payments. The application is then reviewed and processed by the licensing authority.</p>
+  
+        </div>
+        <div class="Box">
+  
+          <h4>How can I renew my license through an online license system?</h4><hr>
+          <p>Renewing a license usually involves logging into the online system, selecting the license to be renewed, verifying or updating personal information, and submitting the renewal request. Online payment may be required for the renewal fees.</p></div>
+  
+        <div class="Box">
+  
+          <h4>Can I track the progress of my license application or renewal?</h4><hr>
+          <p>XpressLcense system provide a tracking feature that allows applicants to monitor the progress of their application or renewal. This can include notifications about any additional information required or when the license is approved and ready for download or delivery.</p>
+        </div>
+  
+        <div class="Box">
+  
+          <h4>Is my personal information secure in an online license system?</h4><hr>
+          <p>XpressLicens system  prioritize security and employ encryption techniques to protect users' personal information. It is important to ensure that you follow recommended security practices, such as using strong passwords and keeping your login credentials confidential, etc.</p>
+        
+        </div>
+        <div class="Box">
+  
+          <h4>Can I pay for my license application or renewal online?</h4><hr>
+          <p>Yes! Using our payment portal you can make any online payment without having any problem</p>
+        </div>
+  
+    </div>
+      
+    <img class="img_question" src="./FAQ_files/images (1).jpeg" alt="image question">
+    <img class="img_question01" src="./FAQ_files/question.jpeg" alt="image question">
+  
+  
+  
+  
+
+
+
+    <footer id="footer">
+
+        <nav>
+            <ul>
+                <li><a href="About Us_Registered user.html">About Us</a></li>
+                <li><a href="FAQ_Registered user.html">FAQs</a></li>
+                <li><a href="Contact Us_Registed user.html">Contact Us</a></li>
+                <li><a href="#">Help and Support</a></li>
+                <li id = "left"><a href="#"><img src="img/logo.jpg" alt="user" id="userimg" height="50px" width="50px"></a></li>
+            </ul>
+        </nav>
+    </div>
+        
+        <p>
+            Copyright © 2023 - Department of Motor Traffic, Sri Lanka.<br> All Rights Reserved
+            Designed & Developed By MLB_WE_01.01_01 <p id="date"></p>
+        
+        </p>
+        <script>
+            var currentDate = new Date();
+            var options = { day: 'numeric', month: 'long', year: 'numeric' };
+            var formattedDate = currentDate.toLocaleString('en-US', options);
+
+            document.getElementById('date').innerText = formattedDate;
+        </script>
+    </footer>
+
+</body>
+</html>

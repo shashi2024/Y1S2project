@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="About Us_files/homepage.css">
+    <link rel="stylesheet" href="About Us_files/About Us.css">
+    <title>Registered User About Us</title>
+</head>
+<body>
+    <div class="header">  <!--navigationbar -->
+        <div class="logo-container">
+            <img src="img/logo.jpg" alt="Website Logo" height="50px" width="50px">
+            <h1>LicenseXpress</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="registereduser.html">Home</a></li>
+                <li><a href="profile.php">Dasboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Driving License</a>
+                    <div class="dropdown-content">
+                        <a href="newDrivingLicesne.html">New Driving License</a>
+                        <a href="renewDrivingLicesne.html">Rnew Driving License</a>
+                        <a href="updateDrivingLicense.html">Update Driving License</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Shedule</a>
+                    <div class="dropdown-content">
+                        <a href="medical.html">Medical Appointment</a>
+                        <a href="WExam.html">written Exam</a>
+                        <a href="PExam.html">Practical Exam</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Eservices</a>
+                    <div class="dropdown-content">
+                        <a href="payments.php">Payment</a>
+                        <a href="practiceexamforregsitereduser.php">Practice Exam</a>
+                    </div>
+                </li>          
+                <li><a href="#">Reports</a></li>
+                <li class="dropdown" id = "left">
+                    <a href="#"><img src="img/user.png" alt="user" id="userimg" height="25px" width="25px"></a>
+                    <div class="dropdown-content">
+                        <a href="logout.php">Logout</a>
+                    </div>
+                </li> 
+                <li id = "left">
+                    <input type="text" name="Search" id="Search" placeholder="Search" class="image-placeholder">
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="Background">   
+        <div class="container-01">
+
+            
+            <div>
+            <img class="img_main" src="./About Us_files/images (2).jpeg" alt="Image"> 
+    
+            <h3 class="H3">Welcome to the Sri Lanka's most trusted online license issuance Website LicenseXPress</h3>
+    
+        
+            </div>
+         </div>    
+
+       
+            
+            
+            
+            
+                <div class="intro">
+                    <h1 class="H1">Who Are We.....</h1>
+                    <hr>
+                    
+                        <p>LicenseXPress is a digital platform that enables you to apply for, manage, and renew various licenses and permits online .
+                        This is a registered secuired &amp; well known systemn in srilanka and we have succesfully issued 1000+ Driving licence within last month so grab your opportunity Today.
+                        </p>
+
+                </div>
+           
+               
+
+
+          
+        
+
+        
+       
+
+            <div class="container-02">
+                
+                <div class="Mission">
+                    <h2 class="H2">Our Mission</h2>
+                    <p>Our Mission is to give an excellent service while saving your valuable time as we get closer to a fully digital World through LicenseXPress.</p>
+                
+                </div>
+            </div>
+            <img class="img-02" src="./About Us_files/mission.jpeg" alt="image-mission">
+        
+
+
+        
+
+            <div class="container-03">
+                <div class="Vision">
+                    <h2 class="H2">Our Vision</h2>
+                    <p>Our vision is to improve your seciurity and privancy while facilitating easy access to your Driving License Dream through LicenseXPress.</p>
+
+                </div>
+            
+            </div>
+            <img class="img-03" src="./About Us_files/images.jpeg" alt="image-vission">
+            
+            <img class="img_04" src="./About Us_files/images.png" alt="Image">
+      
+        
+
+        </div>
+        
+ 
+
+
+    <footer id="footer">
+
+        <nav>
+            <ul>
+                <li><a href="About Us_Registered user.html">About Us</a></li>
+                <li><a href="FAQ_Registered user.html">FAQs</a></li>
+                <li><a href="Contact Us_Registed user.html">Contact Us</a></li>
+                <li><a href="#">Help and Support</a></li>
+                <li id = "left"><a href="#"><img src="img/logo.jpg" alt="user" id="userimg" height="50px" width="50px"></a></li>
+            </ul>
+        </nav>
+    </div>
+        
+        <p>
+            Copyright © 2023 - Department of Motor Traffic, Sri Lanka.<br> All Rights Reserved
+            Designed & Developed By MLB_WE_01.01_01 <p id="date"></p>
+        
+        </p>
+        <script>
+            var currentDate = new Date();
+            var options = { day: 'numeric', month: 'long', year: 'numeric' };
+            var formattedDate = currentDate.toLocaleString('en-US', options);
+
+            document.getElementById('date').innerText = formattedDate;
+        </script>
+    </footer>
+
+</body>
+</html>

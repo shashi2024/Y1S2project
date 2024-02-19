@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <title>Licensexpress</title>
+</head>
+<body><!--navigation-->
+    <div class="header">
+        <div class="logo-container">
+            <img src="img/logo.jpg" alt="Website Logo" height="50px" width="50px">
+            <h1>LicenseXpress</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="policehomepage.html">Home</a></li>
+                <li><a href="profilep.php">Dashboard</a></li>
+                <li><a href="violation1.php">violation Management</a></li>
+                <li><a href="#">Reports</a></li>
+                <li class="dropdown" id = "left">
+                    <a href="#"><img src="img/user.png" alt="user" id="userimg" height="25px" width="25px"></a>
+                    <div class="dropdown-content">
+                        <a href="logout.php">Logout</a>
+                    </div>
+                </li> 
+                <li id = "left">
+                <input type="text" name="Search" id="Search" placeholder="Search" class="image-placeholder">
+                </li>
+            </ul>
+    </div>
+    <!--Slideshow-->
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="img/home3.avif" alt="Slide 1">
+        </div>
+
+        <div class="mySlides">
+            <img src="img/home1.jpg" alt="Slide 2">
+        </div>
+
+        <div class="mySlides">
+            <img src="img/home2.jpg" alt="Slide 3">
+        </div>
+
+        <div class="mySlides">
+            <img src="img/home5.jpg" alt="Slide 4">
+        </div>
+
+        <!-- Previous and Next buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!--footer-->
+        <footer id="footer">
+
+            
+            <p>
+                Copyright © 2023 - Department of Motor Traffic, Sri Lanka.<br> All Rights Reserved
+                Designed & Developed By MLB_WE_01.01_01 <p id="date"></p>
+            
+            </p>
+            <script>
+                var currentDate = new Date();
+                var options = { day: 'numeric', month: 'long', year: 'numeric' };
+                var formattedDate = currentDate.toLocaleString('en-US', options);
+    
+                document.getElementById('date').innerText = formattedDate;
+            </script>
+                    <script>
+                        var slideIndex = 0;
+                        showSlides();
+                
+                        function showSlides() {
+                            var slides = document.getElementsByClassName("mySlides");
+                            for (var i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                
+                            slideIndex++;
+                            if (slideIndex > slides.length) {
+                                slideIndex = 1;
+                            }
+                
+                            slides[slideIndex - 1].style.display = "block";
+                            setTimeout(showSlides, 2000); // Change slide every 2 seconds
+                        }
+                
+                        function plusSlides(n) {
+                            slideIndex += n;
+                            var slides = document.getElementsByClassName("mySlides");
+                
+                            if (slideIndex > slides.length) {
+                                slideIndex = 1;
+                            } else if (slideIndex < 1) {
+                                slideIndex = slides.length;
+                            }
+                
+                            for (var i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                
+                            slides[slideIndex - 1].style.display = "block";
+                        }
+                    </script>
+        </footer>
+</body>
+</html>

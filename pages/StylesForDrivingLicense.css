@@ -1,0 +1,335 @@
+/* Creates breadcrum to show the path*/
+
+ul.breadcrumb1{
+    color:rgb(5, 5, 79);
+}
+
+/* Make list as list into horizontal way */
+ul.breadcrumb1 li {
+    display:inline;
+    font-size: 19px;
+}
+
+/* Add slash to list within items */
+ul.breadcrumb1 li+li:before {
+    padding: 8px;
+    color: rgb(6, 6, 18);
+    content: "/\00a0";
+}
+
+/* Style for each list item when mouse was pointed at it */
+ul.breadcrumb1 li:hover {
+    color:rgb(239, 134, 36)
+}
+
+/* Breadcrumb type 2 */
+
+ul.breadcrumb2{
+    color:rgb(242, 251, 243);
+}
+
+/* Make list as list into horizontal way */
+ul.breadcrumb2 li {
+    display:inline;
+    font-size: 19px;
+}
+
+/* Add slash to list within items */
+ul.breadcrumb2 li+li:before {
+    padding: 8px;
+    color: rgb(238, 238, 241);
+    content: "/\00a0";
+}
+
+/* Style for each list item when mouse was pointed at it */
+ul.breadcrumb2 li:hover {
+    color:rgb(239, 134, 36)
+}
+
+/* Make hyper link without underlining */
+a:link{
+    text-decoration: none;
+}
+
+/* Make a style to use in dark backgrounds and use it in hover actions */
+.light:hover{
+    color: rgb(239, 134, 36);
+}
+
+.light{
+    color: white;
+}
+
+/* Make a style to use in light backgrounds and use it in hover actions */
+.dark:hover{
+    color: rgb(239, 134, 36);
+}
+
+.dark{
+    color: rgb(5, 5, 79);;
+}
+
+/* Basic styles for forms */
+.form {
+    border-style: outset;
+    
+    width:800px;
+    border-color: rgb(1, 1, 53);
+    background: rgba(255, 255, 255, 0.75);
+    text-align: left;
+}
+
+/* Use for some headers apart from system h1 */
+.header{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(5, 5, 106);
+    text-align: center;
+    font-size: larger;
+}
+
+/* Use for style sub topics */
+.subhead
+{
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: center;
+    line-height: 0.1cm;
+
+}
+/* Begin of the styling labels. Used 3 trypes for all forms according to there requirements */
+
+.label-type1 {
+    padding: 6px 10px;
+    font-size: medium;
+    text-align: left;
+    font-weight: bold;
+    margin-left:5%;
+    width: 25%;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+	
+}
+
+.label-type2 {
+    padding: 6px 10px;
+    font-size: medium;
+    
+    font-weight: bold;
+    margin-left:5%;
+    width: 23%;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+    
+	
+}
+
+.label-type3 {
+    
+    font-size: larger;
+    
+    font-weight: bold;
+    margin-left:5%;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+    
+	
+}
+
+
+/* Style label fonts for speacial situations*/
+
+.labelfont
+{
+    font-size: larger;
+    font-weight: bold;
+    margin-left:5%;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+
+  
+.inlineLable{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* Begin of the styling input data types */
+
+.form input[type=text]{
+    font-size: medium;
+    padding: 6px 10px;
+    width: 55%;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(1, 1, 1);
+}
+
+/* Used when a extra margin is needed  */
+.textspecial{
+    margin-left: 42px;
+}
+
+.checkboxtext{
+    font-size: larger;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(12, 11, 11);
+}
+
+.form input[type=radio]{
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+           
+}
+
+
+input[type="checkbox"] {
+    margin-top: 10px;
+    margin-left: 250px;
+    
+}
+
+input[type="file"] {
+    margin-top: 10px;
+    margin-left: 60px;
+    font-size: large;
+    
+}
+
+
+input[type="expire"] {
+    height: 30px;
+    
+}
+
+
+.form input[type=date]{
+        width:200px;
+        height: 30px;
+                   
+}
+    
+/* Style for select options. Size was increased */
+select{
+
+    width:100px;
+    height: 30px;
+
+    }
+
+
+/* Selected area was highlighted by this color */
+textarea{
+    font-size: medium;
+    width: 55%;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(12, 11, 11);
+
+}
+
+/* Special style to use in the * mark which shows that field is required */
+.required {
+    color: red;
+}
+
+
+/* Radio was adjested by using this */
+.lableradio
+{
+    float: left;
+}
+
+/* Create next button */
+  
+.action {
+    background-color: #061b54;
+    color: white;
+    padding: 10px 40px;
+}
+
+/* Hover the style when user point that out */
+.action:hover {
+    background-color: #b1ebff;
+    color: rgb(4, 4, 99) ;
+}
+
+/* Create previous button */
+
+.button {
+    background-color: #061b54;
+    color: white;
+    padding: 10px 50px;
+}
+
+/* Making hover styles for next and previous buttons */
+
+.next:hover {
+    background-color: #24c3d8;
+    color: black;
+}
+
+.previous:hover {
+    background-color: #24c3d8;
+    color: black;
+}
+
+select{
+    font-size: larger;
+    width: 250px;
+}
+
+.image{
+    margin-left: 42px;
+    width: 20%;
+    height: 6%;
+}
+
+.font 
+ {
+    font-size: 30;
+    color: black;
+    margin-left: 20px;
+}
+
+/* Begin of the styling tables */
+
+.tablestyles{
+    font-size: 0.9em;
+    font-family: sans-serif;
+}
+
+
+.tablestyles th{
+    background-color: #061945;
+    padding: 12px 15px;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+.tablestyles td{
+    padding: 12px 15px;
+}
+
+.tablestyles tbody tr{
+    border-bottom: 1px solid #dddddd;
+    color: black;
+}
+
+.tablestyles tbody tr:nth-of-type(even){
+    background-color: #bae0e4;
+}
+
+.tablestyles tbody tr:nth-of-type(odd){
+    background-color: #a3c9f5;
+}
+
+
+  

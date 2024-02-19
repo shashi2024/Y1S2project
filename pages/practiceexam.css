@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+form {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:  rgba(0, 51, 102, 0.2);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    font-size:large;
+    color: black;
+  }
+  
+  form input[type="radio"],
+  form input[type="submit"] {
+    margin-bottom: 10px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size:large;
+  }
+  
+  
+  form input[type="submit"]:hover {
+    background-color: #0059b3;
+  }
+  
+  form p {
+    margin-bottom: 20px;
+    
+  }
+  
+  #marks {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+ 
+  

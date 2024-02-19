@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Written Exam for LicenseXpress">
+  <meta name="keywords" content="LicenseXpress, driving license, written exam">
+  <link rel="stylesheet" href="Exam.css">
+  <title>LicenseXpress</title>
+  <style>
+    form
+    {
+        margin-bottom: 250px;
+
+    }
+    form input[type="time"],
+    form select option
+    {
+    margin-bottom: 10px;
+    width: 325px;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    }
+    form input[type="date"]
+    {
+        margin-left: 50px;
+    }
+    form input[type="submit"]
+    {
+        margin-left: 200px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="header">  <!--navigationbar -->
+    <div class="logo-container">
+        <img src="img/logo.jpg" alt="Website Logo" height="50px" width="50px">
+        <h1>LicenseXpress</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="registereduser.html">Home</a></li>
+            <li><a href="profile.php">Dasboard</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Driving License</a>
+                <div class="dropdown-content">
+                    <a href="newDrivingLicesne.html">New Driving License</a>
+                    <a href="renewDrivingLicesne.html">Rnew Driving License</a>
+                    <a href="updateDrivingLicense.html">Update Driving License</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Shedule</a>
+                <div class="dropdown-content">
+                    <a href="medical.html">Medical Appointment</a>
+                    <a href="WExam.html">written Exam</a>
+                    <a href="PExam.html">Practical Exam</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Eservices</a>
+                <div class="dropdown-content">
+                    <a href="payments.php">Payment</a>
+                    <a href="practiceexamforregsitereduser.php">Practice Exam</a>
+                </div>
+            </li>          
+            <li><a href="#">Reports</a></li>
+            <li class="dropdown" id = "left">
+                <a href="#"><img src="img/user.png" alt="user" id="userimg" height="25px" width="25px"></a>
+                <div class="dropdown-content">
+                    <a href="logout.php">Logout</a>
+                </div>
+            </li> 
+            <li id = "left">
+                <input type="text" name="Search" id="Search" placeholder="Search" class="image-placeholder">
+            </li>
+        </ul>
+    </nav>
+</div>
+<ul class="breadcrumb">
+  <li><a href="registereduser.html">Home</a></li>
+  <li>Medical Appointment</li>
+</ul>
+
+<div class="box">
+  <br>
+  <center>
+    <h1>Medical Appointment</h1>
+  </center>
+
+  <div>
+    <form action="medical.php" method="post">
+      <div class="form-row">
+        <div class="form-col">
+          <label for="id" >NIC Number:</label>
+          <input type="text" id="id" name="id">
+        </div>
+        <div class="form-col">
+          <label for="name">Name:</label>
+          <input type="text" id="fname" name="fname">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-col">
+          <label for="phone">Phone Number:</label>
+          <input type="text" id="phone" name="phone">
+        </div>
+        <div class="form-col">
+          <label for="center">Nearest Medical Center:</label>
+          <select name="center" class="medii">
+            <option value="Colombo">Colombo</option>
+            <option value="Kalutara">Kalutara</option>
+            <option value="Matara">Matara</option>
+            <option value="Kandy">Kandy</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-col">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date">
+        </div>
+        <div class="form-col">
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-col">
+          <input type="submit" value="Schedule Medical">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<footer id="footer">
+
+  <nav>
+    <ul>
+        <li><a href="About Us_Registered user.html">About Us</a></li>
+        <li><a href="FAQ_Registered user.html">FAQs</a></li>
+        <li><a href="Contact Us_Registed user.html">Contact Us</a></li>
+        <li><a href="#">Help and Support</a></li>
+        <li id = "left"><a href="#"><img src="img/logo.jpg" alt="user" id="userimg" height="50px" width="50px"></a></li>
+    </ul>
+</nav>
+
+
+    <p>
+      &copy; 2023 - Department of Motor Traffic, Sri Lanka.<br>
+      All Rights Reserved. Designed & Developed By MLB_WE_01.01_01.<p id="date"></p>
+    </p>
+
+    <script>
+      // Display current date
+      var currentDate = new Date();
+      var options = { day: 'numeric', month: 'long', year: 'numeric' };
+      var formattedDate = currentDate.toLocaleString('en-US', options);
+      document.getElementById('date').innerText = formattedDate;
+    </script>
+  </footer>
+</body>
+</html>

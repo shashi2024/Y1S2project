@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="StylesForDrivingLicense.css" rel="stylesheet">
+
+        <!-- Begin of the internal CSS styles -->
+
+        <style>
+            /* Style for the border of form */
+
+            body{
+                background-image:url("Pictures/Background.jpg");
+                background-repeat: no-repeat; 
+                background-size: cover;
+                
+            }
+        </style>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="homepage.css">
+        
+        <title>
+            Application First Page
+        </title>
+    </head>
+
+    <div class="header">  <!--navigationbar -->
+        <div class="logo-container">
+            <img src="img/logo.jpg" alt="Website Logo" height="50px" width="50px">
+            <h1>LicenseXpress</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="registereduser.html">Home</a></li>
+                <li><a href="profile.php">Dasboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Driving License</a>
+                    <div class="dropdown-content">
+                        <a href="newDrivingLicesne.html">New Driving License</a>
+                        <a href="renewDrivingLicesne.html">Rnew Driving License</a>
+                        <a href="updateDrivingLicense.html">Update Driving License</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Shedule</a>
+                    <div class="dropdown-content">
+                        <a href="medical.html">Medical Appointment</a>
+                        <a href="WExam.html">written Exam</a>
+                        <a href="PExam.html">Practical Exam</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Eservices</a>
+                    <div class="dropdown-content">
+                        <a href="payments.php">Payment</a>
+                        <a href="practiceexamforregsitereduser.php">Practice Exam</a>
+                    </div>
+                </li>          
+                <li><a href="#">Reports</a></li>
+                <li class="dropdown" id = "left">
+                    <a href="#"><img src="img/user.png" alt="user" id="userimg" height="25px" width="25px"></a>
+                    <div class="dropdown-content">
+                        <a href="logout.php">Logout</a>
+                    </div>
+                </li> 
+                <li id = "left">
+                    <input type="text" name="Search" id="Search" placeholder="Search" class="image-placeholder">
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+
+        <ul class="breadcrumb2">
+            
+            <li><a class = "light" href="registereduser.html">Home</a></li>
+            <li><a class = "light" href="newDrivingLicesne.html">New Driving License</a></li>
+            <li>Personal Information</li>
+            
+        </ul> <br><br>
+
+        <center> 
+            <form class = "form" method="POST" action="newapplication1.php"><br>
+                <!-- Header of the application -->
+                <center><img src = "Pictures/Logo.png" width ="100" height = "100" >
+                <h1>LicenseXPress</h1></center>
+                <h2 class = "subhead"> Application for New Driving License - Presonal Details</h2><br><br>
+                
+                
+                <!-- Questions -->
+                
+                    <label for="NIC" class = "label-type1"> 1. NIC Number <font class = "required">*</font></label>
+                    <input type="text" id="NIC" name="NIC" required placeholder="200183301257"> <br>
+
+                    <label for="surname" class = "label-type1"> 2. Surname <font class = "required">*</font></label>
+                    <input type="text" id="surname" name="surname" required placeholder="Katugampola"> <br>
+
+                    <label for="OtherNames" class = "label-type1"> 3. Other Names <font class = "required">*</font></label>
+                    <input type="text" id="OtherNames" name="OtherNames" required placeholder="Saman Kumara"> <br>
+
+                    <label for="NOC" class = "label-type1"> 4. Name to be on the card <font class = "required">*</font></label>
+                    <textarea rows = "5" cols = "57"  name = "NOC" required></textarea><br>
+
+                    
+                    <label for="Gender" class = "label-type2" > 5. Gender <font class = "required">*</font></label>
+                    
+                    <input type="radio" id="male" name="Gender" value="male"checked> Male
+                    <input type="radio" id="female" name="Gender" value="female"checked> Female <br>
+                    <br>
+                    
+                    <label for="DOB" class = "label-type1"> 6. Birthday <font class = "required">*</font></label>
+                    <br><input type="date" id="DOB" name="DOB" required ><br><br>
+
+                    <label for="height" class = "label-type1"> 7. Height <font class = "required">*</font></label>
+                    <input type="text" id="height" name="height" required placeholder="Enter in cm. example : 165"> <br>
+
+                    <label for="bloodgroup" class = "label-type1"> 8. Blood Group <font class = "required">*</font></label>
+                    <br>
+                    <select id="Bloodgroup" name="BloodGroup">
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+
+                    </select><BR>
+
+                    <label for="Address" class = "label-type1"> 9. Address <font class = "required">*</font></label>
+                    <textarea rows = "5" cols = "57"  name = "Address" required></textarea><br>
+
+                    <label for="DivisionalSec" class = "label-type1"> 10. Divisional Secreteriant <font class = "required">*</font></label>
+                    <input type="text" id="DivisionalSec" name="DivisionalSec" required> <br>
+                    
+                    <label for="PhoneNumber" class = "label-type1"> 11. Phone Number <font class = "required">*</font></label>
+                    <input type="text" id="PhoneNumber" name="PhoneNumber" required> <br><br><br>
+
+                    <center>
+                        <input type="submit" class = "action" value="Next">
+                    </center><br><BR>
+                </p>
+             
+            </form>
+            
+        </center>
+        
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+
+        <footer id="footer">
+
+            <nav>
+                <ul>
+                    <li><a href="About Us_Registered user.html">About Us</a></li>
+                    <li><a href="FAQ_Registered user.html">FAQs</a></li>
+                    <li><a href="Contact Us_Registed user.html">Contact Us</a></li>
+                    <li><a href="#">Help and Support</a></li>
+                    <li id = "left"><a href="#"><img src="img/logo.jpg" alt="user" id="userimg" height="50px" width="50px"></a></li>
+                </ul>
+            </nav>
+            
+            <p>
+                Copyright © 2023 - Department of Motor Traffic, Sri Lanka.<br> All Rights Reserved
+                Designed & Developed By MLB_WE_01.01_01 <p id="date"></p>
+            
+            </p>
+            <script>
+                var currentDate = new Date();
+                var options = { day: 'numeric', month: 'long', year: 'numeric' };
+                var formattedDate = currentDate.toLocaleString('en-US', options);
+    
+                document.getElementById('date').innerText = formattedDate;
+            </script>
+    
+        </footer>
+    
+    </body>
+    </html>
+        
+
+
+    </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Written Exam for LicenseXpress">
+  <meta name="keywords" content="LicenseXpress, driving license, written exam">
+  <title>Licensexpress</title>
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="Exam.css">
+</head>
+
+<body>
+  <div class="header">  <!--navigationbar -->
+    <div class="logo-container">
+        <img src="img/logo.jpg" alt="Website Logo" height="50px" width="50px">
+        <h1>LicenseXpress</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="registereduser.html">Home</a></li>
+            <li><a href="profile.php">Dasboard</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Driving License</a>
+                <div class="dropdown-content">
+                    <a href="newDrivingLicesne.html">New Driving License</a>
+                    <a href="renewDrivingLicesne.html">Rnew Driving License</a>
+                    <a href="updateDrivingLicense.html">Update Driving License</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Shedule</a>
+                <div class="dropdown-content">
+                    <a href="medical.html">Medical Appointment</a>
+                    <a href="WExam.html">written Exam</a>
+                    <a href="PExam.html">Practical Exam</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Eservices</a>
+                <div class="dropdown-content">
+                    <a href="payments.php">Payment</a>
+                    <a href="practiceexamforregsitereduser.php">Practice Exam</a>
+                </div>
+            </li>          
+            <li><a href="#">Reports</a></li>
+            <li class="dropdown" id = "left">
+                <a href="#"><img src="img/user.png" alt="user" id="userimg" height="25px" width="25px"></a>
+                <div class="dropdown-content">
+                    <a href="logout.php">Logout</a>
+                </div>
+            </li> 
+            <li id = "left">
+                <input type="text" name="Search" id="Search" placeholder="Search" class="image-placeholder">
+            </li>
+        </ul>
+    </nav>
+</div>
+
+  <!-- Breadcrumb Navigation -->
+  <ul class="breadcrumb">
+    <li><a href="registereduser.html">Home</a></li>
+    <li>Shedule Practical Exam</li>
+  </ul>
+
+  <!-- Form Section -->
+  <div class="box">
+    <br>
+    <center>
+      <h1>Schedule Practical Exam</h1>
+    </center>
+
+    <!-- Exam Form -->
+    <form id="examForm" action="PExam.php" method="post">
+      <div class="form-row">
+        <div class="form-col">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" size="30" required>
+        </div>
+        <div class="form-col">
+          <label for="examCenter">Nearest Exam Center:</label>
+          <select id="examCenter" name="examCenter" required>
+            <option value="">Select Exam Center</option>
+            <option value="center1">Werahera-Colombo</option>
+            <option value="center2">Tennekumbura-Kandy</option>
+            <option value="center3">Kachcheri-Kurunegala</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-col">
+          <label for="nicNumber">NIC Number:</label>
+          <input type="text" id="nicNumber" name="nicNumber" maxlength="12" required>
+        </div>
+        <div class="form-col">
+          <label for="examDate">Exam Date:</label>
+          <input type="date" id="examDate" name="examDate" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-col">
+          <label for="emailAddress">Email Address:</label>
+          <input type="email" id="emailAddress" name="emailAddress" size="30" required>
+        </div>
+        <div class="form-col">
+          <label for="timeSlot">Time Slot:</label>
+          <select id="timeSlot" name="timeSlot" required>
+            <option value="">Select Time Slot</option>
+            <option value="slot1">09:00 AM - 11:00 AM</option>
+            <option value="slot2">12:00 PM - 2:00 PM</option>
+            <option value="slot3">3:00 PM - 5:00 PM</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-col">
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="text" id="phoneNumber" name="phoneNumber" maxlength="10" width="90%" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-col"></div>
+        <div class="form-col">
+          <input type="submit" value="Schedule Exam" name="submit">
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+
+    <nav>
+      <ul>
+          <li><a href="About Us_Registered user.html">About Us</a></li>
+          <li><a href="FAQ_Registered user.html">FAQs</a></li>
+          <li><a href="Contact Us_Registed user.html">Contact Us</a></li>
+          <li><a href="#">Help and Support</a></li>
+          <li id = "left"><a href="#"><img src="img/logo.jpg" alt="user" id="userimg" height="50px" width="50px"></a></li>
+      </ul>
+  </nav>
+
+    <p>
+      &copy; 2023 - Department of Motor Traffic, Sri Lanka.<br>
+      All Rights Reserved. Designed & Developed By MLB_WE_01.01_01.<p id="date"></p>
+    </p>
+
+    <script>
+      // Display current date
+      var currentDate = new Date();
+      var options = { day: 'numeric', month: 'long', year: 'numeric' };
+      var formattedDate = currentDate.toLocaleString('en-US', options);
+      document.getElementById('date').innerText = formattedDate;
+    </script>
+  </footer>
+</body>
+</html>

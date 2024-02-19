@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="./Contact Us_files/Contact us.css">
+    <title>Licensexpress</title>
+    <style>
+      
+    .container_main {
+        margin-bottom: 120px; 
+    }
+    </style>
+</head>
+<body>
+    <div class="header"> <!--navigation-->
+        <div class="logo-container">
+            <img src="img/logo.jpg" alt="Website Logo" height="50px" width="50px">
+            <h1>LicenseXpress</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="homepageuser.php">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Eservices</a>
+                    <div class="dropdown-content">
+                        <a href="practiceexam.php">Practice Exam</a>
+                    </div>
+                </li>
+                <li><a href="FAQ.html">FAQs</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li id = "left"><a href="#"><img src="img/user.png" alt="user" id="userimg" height="25px" width="25px"></a></li>
+                <li id = "left"><a href="signup.html">Sign Up</a></li>
+                <li id = "left"><a href="login.html">Login</a></li>
+                <li id = "left">
+                    <input type="text" name="Search" id="Search" placeholder="Search" class="image-placeholder">
+                </li>
+            </ul>
+        </nav>
+    </div>
+        
+        <img class="img_01" src="./Contact Us_files/images (3).jpeg" alt="image 01">
+        <div class="container01">
+           
+        </div>
+        
+        <div class="container02">
+            <h2 class="H2">Welcome to the Contact Page of  LicenseXPress</h2>
+        </div>
+
+        <div class="container_main">
+                <div class="container03">
+                    <div class="Box"> 
+                        Location :<br> No.251/B,<br> 1st Lane,<br> Rajagiriya Sri Lanka.<br>
+                    </div>
+
+                    <div class="Box">
+                        Email :<br> license.xpess2023@gmil.com
+                    </div>
+
+                    <div class="Box">
+                        Contact No : <br>+94 77 259 1216 <br> +94 11 225 4125
+                    </div>
+                </div>
+
+                <div class="images">
+                    <img class="Contact" src="./Contact Us_files/download (3).png" alt="img Location">
+                    <img class="Contact" src="./Contact Us_files/email.png" alt="img Email">
+                    <img class="Contact" src="./Contact Us_files/phone.jpeg" alt="img Phone">
+
+                </div>
+
+
+
+                <form class="Form" action="ContactUs.php" method="post">
+                    <div class="Form_Group">
+                      <label for="first_name">First Name:</label>
+                      <input type="text" id="first_name" class="Form_TextBox" name="first_name" placeholder="First Name" required>
+                    </div>
+                  
+                    <div class="Form_Group">
+                      <label for="last_name">Last Name:</label>
+                      <input type="text" id="last_name" class="Form_TextBox" name="last_name" placeholder="Last Name" required>
+                    </div>
+
+                    <div class="Form_Group">
+                        <label for="contact">Contact Number:</label><br>
+                        <input type="tel" id="contact" class="Form_TextBox" name="contact" placeholder="07*********" required>
+                    </div>
+                  
+                    <div class="Form_Group">
+                      <label for="email">Email Address:</label>
+                      <input type="email" id="email" class="Form_TextBox" name="email" placeholder="someone@gmail.com" required>
+                    </div>
+                  
+                    <div class="Form_Group">
+                      <label for="details">Details:</label><br>
+                      <textarea id="details" name="details" class="Form_TextBox" rows="8" cols="50" required placeholder="Send us a message..."></textarea>
+                    </div>
+                    
+                    
+                    <div class="Form_Group">
+                      <input type="checkbox" id="details_checkbox" required>
+                      <label for="details_checkbox">Please tick this to confirm that you have filled all the required details</label>
+                    </div>
+                    
+                  
+                    <button class="submit_button">Submit</button>
+                  </form>
+                  
+            </div>
+
+     
+                <footer id="footer">
+                
+                    <p>
+                        Copyright © 2023 - Department of Motor Traffic, Sri Lanka.<br> All Rights Reserved
+                        Designed &amp; Developed By MLB_WE_01.01_04 </p><p id="date">June 4, 2023</p>
+                    
+                    <p></p>
+                    <script>
+                        var currentDate = new Date();
+                        var options = { day: 'numeric', month: 'long', year: 'numeric' };
+                        var formattedDate = currentDate.toLocaleString('en-US', options);
+            
+                        document.getElementById('date').innerText = formattedDate;
+                    </script>
+                </footer>
+                
+        
+    
+</body></html>

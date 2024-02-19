@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body {
+
+    background-repeat: no-repeat;
+    background-image: url("img/PicsArt_05-24-07.13.29.jpg");
+    background-size: cover;
+}
+
+
+
+form {
+    max-width: 500px;
+    margin: 270px auto;
+    padding: 20px;
+    background-color: #0059b3;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+}
+
+form input[type="text"],
+form input[type="submit"]
+{
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+#password
+{
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+form input[type="submit"] {
+    background-color: #003366;
+    width: 200px;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+

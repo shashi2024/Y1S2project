@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="homepage.css">
+    <title>Licensexpress</title>
+</head>
+<body>
+ 
+        <div class="header"> <!--navigation-->
+            <div class="logo-container">
+                <img src="img/logo.jpg" alt="Website Logo" height="50px" width="50px">
+                <h1>LicenseXpress</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="homepageuser.php">Home</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Eservices</a>
+                        <div class="dropdown-content">
+                            <a href="practiceexam.php">Practice Exam</a>
+                        </div>
+                    </li>
+                    <li><a href="FAQ.html">FAQs</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                    <li id = "left"><a href="#"><img src="img/user.png" alt="user" id="userimg" height="25px" width="25px"></a></li>
+                    <li id = "left"><a href="signup.html">Sign Up</a></li>
+                    <li id = "left"><a href="login.html">Login</a></li>
+                    <li id = "left">
+                        <input type="text" name="Search" id="Search" placeholder="Search" class="image-placeholder">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    <form action="login.php" method="post">
+        NIC <br>
+        <input type="text" name = "Nic" required><br>
+        Passsword <br>
+        <input type="password" name = "Passsword"  id= "password" required><br>
+        <input type="submit" value="Login" name="Login">
+    </form>
+    
+
+    <footer id="footer">
+        
+        <p>
+            Copyright © 2023 - Department of Motor Traffic, Sri Lanka.<br> All Rights Reserved
+            Designed & Developed By MLB_WE_01.01_01 <p id="date"></p>
+        
+        </p>
+        <script>
+            var currentDate = new Date();
+            var options = { day: 'numeric', month: 'long', year: 'numeric' };
+            var formattedDate = currentDate.toLocaleString('en-US', options);
+
+            document.getElementById('date').innerText = formattedDate;
+        </script>
+    </footer>
+
+</body>
+</html>

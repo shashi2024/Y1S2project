@@ -1,0 +1,277 @@
+@charset "UTF-8";
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    body{
+      zoom: 80%;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    background-color: #003366;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+}
+
+.logo-container img {
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.logo-container h1 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #003366;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav li a:hover {
+    background-color: #0059b3;
+    border-radius: 25px;
+}
+#left
+{
+  float: right;
+}
+#userimg
+{
+  border-radius: 50%;
+}
+.image-placeholder {
+  background-image: url("img/download.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 20px;
+  border-radius: 20px;
+  padding: 10px; 
+}
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  #0059b3f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius:  15px; ;
+    
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    display:block;
+}
+
+.dropdown-content a:hover {
+    background-color: #003366 ;
+}
+
+
+#footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    font-family: Consolas;
+}
+
+#footer p {
+    margin: 0;
+}
+#date
+{
+  float:right;
+}
+#marks
+{
+    text-align: center;
+}
+
+
+
+.driving-license-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+}
+
+.driving-license-search input[type="submit"] {
+    margin-bottom: 10px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #003366;
+    margin-left: 20px;
+    color: white;
+    border: none;
+}
+
+.driving-license-search input[type="search"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    padding: 20px;
+    width: 100%;
+    height: calc(100vh - 10px - 10px - 90px);
+}
+
+.box {
+    background-color:   rgba(0, 51, 102, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 10px;
+    height : 90%;
+   
+}
+
+#box1 {
+    margin-left: 0px;
+    width: 20%;
+   
+}
+#box1 img
+{
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+#box1 h3 {
+    
+    text-align: left;
+   
+}
+#box2{
+    width: 40%;
+}
+#box2 h2{
+    margin: 0;
+    margin-left: 50px;
+    
+}
+#box2 h3 {
+    
+    display: inline-block;
+    margin: 0;
+    width: 50px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+#box2 input[type="number"] {
+    font-size: 20px;
+    display: inline-block;
+    width: 50px;
+    height: 35px;
+    margin-left: 250px;
+}
+
+#box2 input[type="submit"] {
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #003366;
+    margin-top: 150px;
+    margin-left: 50px;
+    color: white;
+    border: none;
+}
+#box3 {
+    width: 40%;
+}
+
+#box3 h3 {
+    text-align: left;
+    font-size: 25px;
+   
+}
+
+#box3 select {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+#box3 input[type="text"] {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+#box3 input[type="submit"] {
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #003366;
+    color: white;
+    border: none;
+}
+
+#box3 h1 {
+    text-align: center;
+}

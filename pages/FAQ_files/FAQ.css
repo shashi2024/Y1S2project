@@ -1,0 +1,95 @@
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    body{
+      zoom: 80%;
+      background: radial-gradient(rgb(32, 50, 58),rgb(221, 223, 224));
+      
+      
+    }
+}
+.container01{
+   background-color:rgb(168, 175, 175);
+    height: 190px;
+} 
+.img_FAQ{
+    
+    position: relative;
+    left: 40%;
+    top: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+
+}
+.p01{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 76, 133);
+    padding: 5px;
+    font-size: 20px;
+    font-family: Verdana;
+    font-weight: 600;
+    margin: auto;
+
+    
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    
+    
+    
+    
+    
+    
+    
+}
+.Box{
+    
+    width: 350px;
+    height: 400px;
+    background-color: cadetblue;
+    margin:50px;
+    padding: 20px;
+    justify-content: space-evenly;
+    color: rgb(3, 50, 94);
+    line-height: 30px;
+    font-size: 21px;
+    font-family: normal;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url(images\ \(8\).jpeg);
+    background-size: cover;
+    
+}
+.Box:hover{
+    opacity: 0.5s;
+    background-color: rgb(151, 153, 155);
+    cursor: pointer;
+}
+.img_question{
+    width: 100px;
+    height:100px;
+    position: absolute;
+    right: 20px;
+    top: 150px;
+    opacity: 1;
+    padding: 0%;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img_question01{
+    width: 100px;
+    height:100px;
+    position: absolute;
+    left: 20px;
+    top: 150px;
+    opacity: 1;
+    padding: 0%;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
